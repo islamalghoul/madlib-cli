@@ -1,5 +1,9 @@
 url="assets/story.txt"
 
+print("""welcome to our game
+
+*****************
+""")
 def read_template(url):
     """
     this function takes the file path then read the content
@@ -49,6 +53,9 @@ def merge(str,tuple):
     return result
     
 def inputs(str,tuple):
+    """
+    this function takes the inputs from the user and  return the marge of it
+    """
     array=[]
     for i in range(len(tuple)):
         array.append(input("please inter "+tuple[i]+":"))
@@ -59,6 +66,9 @@ def inputs(str,tuple):
 result=inputs(string,arr)
 
 def write_story(result):
+    """
+    this function takes the content and write the content in txt file and return the content
+    """
     try:
         with open('assets/reponse.txt', 'w') as f:
             data= f.write(result)
@@ -68,6 +78,10 @@ def write_story(result):
 
 story=write_story(result)
 def read_story():
+    """
+    this function read the content
+    and return the content
+    """
     try:
         with open("assets/reponse.txt") as file:
             data= file.read()
