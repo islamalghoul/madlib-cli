@@ -17,7 +17,7 @@ def read_template(url):
             
     except FileNotFoundError:
         raise FileNotFoundError
-    return data
+    return data 
 
 read=read_template(url)
    
